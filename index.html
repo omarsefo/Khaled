@@ -11,6 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("7s7VqfJ15KyBM_Qyv");
+        })();
+    </script>
 </head>
 
 <body>
@@ -118,8 +124,8 @@
                     </li>
 
                     <li class="social-item">
-                        <a href="#" target="_blank" class="social-link">
-                            <ion-icon name="logo-twitter"></ion-icon>
+                        <a href="https://www.linkedin.com/in/khaled-sy-b22460258" target="_blank" class="social-link">
+                            <ion-icon name="logo-linkedin"></ion-icon>
                         </a>
                     </li>
 
@@ -259,15 +265,16 @@
                         <li class="service-item">
 
                             <div class="service-icon-box">
-                                <img src="./image/xd.png" alt="camera icon" width="60">
+                                <img src="./image/lomion.jpg" alt="camera icon" width="60">
                             </div>
 
                             <div class="service-content-box">
-                                <h4 class="h4 service-item-title">Adobe XD</h4>
+                                <h4 class="h4 service-item-title">Lumion</h4>
 
                                 <p class="service-item-text">
-                                    is a vector design tool for web and mobile applications, developed and published by
-                                    Adobe Inc.
+                                    Lumion is a 3D modeling and computer-aided design software product that
+                                    provides
+                                    a robust platform to create detailed floorplans and 3D models.
                                 </p>
                             </div>
 
@@ -388,41 +395,103 @@
                     </ol>
                 </section>
 
-                <section class="clients">
-                    <h3 class="h3 clients-title">Skills</h3>
-                    <ul class="clients-list has-scrollbar">
-                        <li class="clients-item">
-                            <div>Revit</div>
+                <section class="skill">
+
+                    <h3 class="h3 skills-title">My skills</h3>
+
+                    <ul class="skills-list content-card" id="skill">
+
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Revit</h5>
+                                <data value="90">90%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" data-progress="90"></div>
+                            </div>
+
                         </li>
 
-                        <li class="clients-item">
-                            <div>Adobe XD</div>
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">AutoCad</h5>
+                                <data value="85">85%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" data-progress="85"></div>
+                            </div>
+
                         </li>
 
-                        <li class="clients-item">
-                            <div>AutoCad</div>
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Adobe XD</h5>
+                                <data value="40">40%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" data-progress="40"></div>
+                            </div>
+
                         </li>
 
-                        <li class="clients-item">
-                            <div>V-Ray</div>
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">3Ds Max</h5>
+                                <data value="70">70%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" data-progress="70"></div>
+                            </div>
+
+                        </li>
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">V-Ray</h5>
+                                <data value="65">65%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" data-progress="65"></div>
+                            </div>
+
+                        </li>
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">Lumion</h5>
+                                <data value="80">80%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" data-progress="80"></div>
+                            </div>
+
                         </li>
 
-                        <li class="clients-item">
-                            <div>3Ds Max</div>
+                        <li class="skills-item">
+
+                            <div class="title-wrapper">
+                                <h5 class="h5">English</h5>
+                                <data value="60">60%</data>
+                            </div>
+
+                            <div class="skill-progress-bg">
+                                <div class="skill-progress-fill" data-progress="60"></div>
+                            </div>
+
                         </li>
 
-                        <li class="clients-item">
-                            <div>Lumion</div>
-                        </li>
-
-                        <li class="clients-item">
-                            <div>Enscape</div>
-                        </li>
-
-                        <li class="clients-item">
-                            <div>B1 in English</div>
-                        </li>
                     </ul>
+
                 </section>
             </article>
 
@@ -461,7 +530,7 @@
                             </div>
                         </li>
 
-                        <li class="blog-post-item" data-testimonials-item>
+                        <!-- <li class="blog-post-item" data-testimonials-item>
                             <figure class="blog-banner-box">
                                 <img src="./image/hamb4.jpeg" alt="Best fonts every designer" loading="lazy"
                                     data-testimonials-avatar>
@@ -482,7 +551,7 @@
                                     Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
                                 </p>
                             </div>
-                        </li>
+                        </li> -->
                     </ul>
 
                 </section>
@@ -535,20 +604,20 @@
 
                     <h3 class="h3 form-title">Contact Form</h3>
 
-                    <form action="#" class="form" data-form>
+                    <form class="form" data-form>
 
                         <div class="input-wrapper">
-                            <input type="text" name="fullname" class="form-input" placeholder="Full name" required
+                            <input type="text" name="name" id="name" class="form-input" placeholder="Full name" required
                                 data-form-input>
 
-                            <input type="email" name="email" class="form-input" placeholder="Email address" required
-                                data-form-input>
+                            <input type="email" name="email" id="email" class="form-input" placeholder="Email address"
+                                required data-form-input>
                         </div>
 
-                        <textarea name="message" class="form-input" placeholder="Your Message" required
+                        <textarea name="message" class="form-input" id="message" placeholder="Your Message" required
                             data-form-input></textarea>
 
-                        <button class="form-btn" type="submit" disabled data-form-btn>
+                        <button class="form-btn" type="button" disabled data-form-btn>
                             <ion-icon name="paper-plane"></ion-icon>
                             <span>Send Message</span>
                         </button>
@@ -566,10 +635,9 @@
         <span>Created By<a target="_blank" href="https://omarsefo.github.io"> OmarSefo</a></span>
     </footer>
 
-    <script src="./js/khaled.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+    <script src="./js/khaled.js"></script>
 </body>
 
 </html>

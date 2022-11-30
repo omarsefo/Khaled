@@ -22,6 +22,34 @@ for (let i = 0; i < navigationLinks.length; i++) {
 // element toggle function
 const elementToggleFunc = function (elem) { elem.classList.toggle("active"); }
 
+const skill = document.getElementById("skill");
+const progressbar = document.querySelectorAll(".skill-progress-fill");
+
+function showprogress() {
+    progressbar.forEach(progressbar => {
+        var value = progressbar.dataset.progress;
+        progressbar.style.opacity = 1;
+        progressbar.style.width = `${value}%`
+    })
+}
+
+function hideprogress() {
+    progressbar.forEach(progressbar => {
+        progressbar.style.opacity = 0;
+        progressbar.style.width = 0;
+    })
+}
+
+window.addEventListener("scroll", () => {
+    const skillsection = skill.getBoundingClientRect().top;
+    const screenpos = window.innerHeight;
+
+    if (skillsection < screenpos) {
+        showprogress();
+    } else {
+        hideprogress();
+    }
+})
 
 
 // sidebar variables
@@ -87,5 +115,32 @@ for (let i = 0; i < formInputs.length; i++) {
             formBtn.setAttribute("disabled", "");
         }
     });
+}
+var vname = document.getElementById("name");
+var email = document.getElementById("email");
+var message = document.getElementById("message");
+
+formBtn.addEventListener("click", sendMail);
+
+function sendMail() {
+    var tempParms = {
+        from_name: document.getElementById("email").value,
+        ename: document.getElementById("name").value,
+        to_name: "Khaledtr512@gmail.com",
+        message: document.getElementById("message").value,
+    }
+    emailjs.send('service_rhv2wst', 'template_kgosfgn', tempParms)
+        .then(function (res) {
+            console.log("success", res.status);
+            document.body.style.cursor = "wait";
+            setTimeout(() => {
+                email.value = '';
+                vname.value = '';
+                message.value = '';
+                setTimeout(() => {
+                    document.body.style.cursor = "default";
+                }, 3000);
+            }, 7000);
+        })
 }
 

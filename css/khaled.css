@@ -74,6 +74,7 @@
     --transition-2: 0.5s ease-in-out;
 
 }
+
 /*-----------------------------------*\
     #RESET
   \*-----------------------------------*/
@@ -313,14 +314,14 @@ main {
 
 .avatar-box {
     background: var(--bg-gradient-onyx);
-    border-radius: 30px ;
-    -webkit-border-radius: 30px ;
-    -moz-border-radius: 30px ;
-    -ms-border-radius: 30px ;
-    -o-border-radius: 30px ;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
 }
 
-.avatarb{
+.avatarb {
     border-radius: 30px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
@@ -425,7 +426,7 @@ main {
     font-size: var(--fs-7);
 }
 
-.contact-link:hover{
+.contact-link:hover {
     color: var(--orange-yellow-crayola);
 }
 
@@ -874,6 +875,52 @@ main {
     line-height: 1.6;
 }
 
+.skills-title {
+    margin-bottom: 20px;
+}
+
+.skills-list {
+    padding: 20px;
+}
+
+
+.skills-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.skill .title-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 8px;
+}
+
+.skill .title-wrapper data {
+    color: var(--light-gray);
+    font-size: var(--fs-7);
+    font-weight: var(--fw-300);
+}
+
+.skill-progress-bg {
+    background: var(--jet);
+    width: 100%;
+    height: 8px;
+    border-radius: 10px;
+}
+
+.skill-progress-fill {
+    background: var(--text-gradient-yellow);
+    opacity: 0;
+    height: 100%;
+    border-radius: inherit;
+    transition:all 4s ease-out;
+    -webkit-transition:all 4s ease-out;
+    -moz-transition:all 4s ease-out;
+    -ms-transition:all 4s ease-out;
+    -o-transition:all 4s ease-out;
+}
+
+
 
 /*-----------------------------------*\
     #BLOG
@@ -968,7 +1015,8 @@ main {
     font-weight: var(--fw-300);
     line-height: 1.6;
 }
-.model{
+
+.model {
     color: var(--light-gray);
 }
 
@@ -1087,21 +1135,21 @@ footer {
     text-align: center;
     color: #fff;
     position: relative;
-  }
+}
 
-  footer span{
+footer span {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  footer span a {
+}
+
+footer span a {
     color: var(--orange-yellow-crayola);
     text-decoration: none;
     filter: drop-shadow(1px 4px 0.5px #000);
-  }
-  
-  footer span a:hover {
+}
+
+footer span a:hover {
     color: #eee;
     text-decoration: underline;
     transition: all 0.5s ease ease-in-out;
@@ -1109,26 +1157,56 @@ footer {
     -moz-transition: all 0.5s ease ease-in-out;
     -ms-transition: all 0.5s ease ease-in-out;
     -o-transition: all 0.5s ease ease-in-out;
-  }
+}
 
 
 
 /*-----------------------------------*\
     #RESPONSIVE
   \*-----------------------------------*/
-  @media (min-width: 0px) {
-    main{
+@media (min-width: 0px) {
+    main {
         margin-bottom: 25px;
     }
 
     footer {
         font-size: 13px;
         margin-bottom: 90px;
-      }
-      .navbar-link {
+    }
+
+    .navbar-link {
         --fs-8: 15px;
     }
-  }
+    .testimonials-modal {
+        gap: 25px;
+    }
+
+    .modal-content{
+        padding-top: 10px;
+    }
+
+    .modal-img-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modal-avatar-box {
+        border-radius: 18px;
+        margin-bottom: 0;
+    }
+
+    .modal-avatar-box img {
+        width: 280px;
+    }
+
+    .modal-img-wrapper>img {
+        display: block;
+        flex-grow: 1;
+        width: 35px;
+    }
+}
+
 @media (min-width: 450px) {
     /**
      * #PORTFOLIO, BLOG 
@@ -1138,16 +1216,17 @@ footer {
     .blog-banner-box {
         height: auto;
     }
-    main{
+
+    main {
         margin-bottom: 25px;
     }
 
     footer {
         margin-bottom: 90px;
         font-size: 18px;
-      }
+    }
 
-      .navbar-link {
+    .navbar-link {
         --fs-8: 17px;
     }
 
@@ -1217,13 +1296,13 @@ footer {
         border-radius: 30px;
     }
 
-    .avatarb{
+    .avatarb {
         border-radius: 30px;
         -webkit-border-radius: 30px;
         -moz-border-radius: 30px;
         -ms-border-radius: 30px;
         -o-border-radius: 30px;
-}
+    }
 
     .avatar-box img {
         width: 120px;
@@ -1456,7 +1535,7 @@ footer {
 
     footer {
         margin-bottom: 90px;
-      }
+    }
 
 }
 
@@ -1465,7 +1544,7 @@ footer {
         width: 700px;
     }
 
-    main{
+    main {
         margin-bottom: 20px;
     }
 
@@ -1543,7 +1622,7 @@ footer {
 
     footer {
         margin-bottom: 90px;
-      }
+    }
 
 }
 
@@ -1617,7 +1696,7 @@ footer {
 
     footer {
         margin: 33px 0px;
-      }
+    }
 
 }
 
@@ -1741,7 +1820,8 @@ footer {
     .timeline-text {
         max-width: 700px;
     }
+
     footer {
         margin: 33px 0px;
-      }
+    }
 }
