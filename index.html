@@ -11,12 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init("7s7VqfJ15KyBM_Qyv");
-        })();
-    </script>
 </head>
 
 <body>
@@ -189,18 +183,16 @@
                         print media.
                         I enjoy
                         turning complex problems into simple, beautiful and intuitive designs.
-                    </p>
-
-                    <p>
                         My job is to build your website so that it is functional and user-friendly but at the same time
                         attractive.
-                        Moreover, I
-                        add personal touch to your product and make sure that is eye-catching and easy to use. My aim is
-                        to bring
-                        across your
-                        message and identity in the most creative way. I created web design for many famous brand
-                        companies.
                     </p>
+                    <div class="buttons">
+                        <a href="./image/Khaled's CV.pdf" download="./image/Khaled's CV.pdf">
+                            <button class="button">
+                                Download CV
+                            </button>
+                        </a>
+                    </div>
                 </section>
 
 
@@ -605,7 +597,9 @@
                     <h3 class="h3 form-title">Contact Form</h3>
 
                     <form class="form" data-form>
-
+                        <div class="overlay-form">
+                            <section><span class="loader-17"> </span></section>
+                        </div>
                         <div class="input-wrapper">
                             <input type="text" name="name" id="name" class="form-input" placeholder="Full name" required
                                 data-form-input>
@@ -635,6 +629,12 @@
         <span>Created By<a target="_blank" href="https://omarsefo.github.io"> OmarSefo</a></span>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("7s7VqfJ15KyBM_Qyv");
+        })();
+    </script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="./js/khaled.js"></script>

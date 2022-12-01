@@ -119,6 +119,7 @@ for (let i = 0; i < formInputs.length; i++) {
 var vname = document.getElementById("name");
 var email = document.getElementById("email");
 var message = document.getElementById("message");
+var overlaylo = document.querySelector(".overlay-form");
 
 formBtn.addEventListener("click", sendMail);
 
@@ -133,13 +134,15 @@ function sendMail() {
         .then(function (res) {
             console.log("success", res.status);
             document.body.style.cursor = "wait";
+            overlaylo.classList.add("active");
             setTimeout(() => {
                 email.value = '';
                 vname.value = '';
                 message.value = '';
                 setTimeout(() => {
                     document.body.style.cursor = "default";
-                }, 3000);
+                    overlaylo.classList.remove("active");
+                }, 2000);
             }, 7000);
         })
 }

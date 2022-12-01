@@ -521,7 +521,45 @@ main {
     margin-bottom: 15px;
 }
 
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 
+    width: 100%;
+}
+
+.button {
+    position: relative;
+    background: var(--border-gradient-onyx);
+    color: var(--orange-yellow-crayola);
+    gap: 10px;
+    padding: 13px 20px;
+    border-radius: 14px;
+    font-size: var(--fs-6);
+    text-transform: capitalize;
+    box-shadow: var(--shadow-3);
+    z-index: 1;
+    transition: var(--transition-1);
+}
+
+.button::before {
+    content: "";
+    position: absolute;
+    inset: 1px;
+    background: var(--bg-gradient-jet);
+    border-radius: inherit;
+    z-index: -1;
+    transition: var(--transition-1);
+}
+
+.button:hover {
+    background: var(--bg-gradient-yellow-1);
+}
+
+.button:hover::before {
+    background: var(--bg-gradient-yellow-2);
+}
 
 /**
    * #service 
@@ -913,11 +951,11 @@ main {
     opacity: 0;
     height: 100%;
     border-radius: inherit;
-    transition:all 4s ease-out;
-    -webkit-transition:all 4s ease-out;
-    -moz-transition:all 4s ease-out;
-    -ms-transition:all 4s ease-out;
-    -o-transition:all 4s ease-out;
+    transition: all 4s ease-out;
+    -webkit-transition: all 4s ease-out;
+    -moz-transition: all 4s ease-out;
+    -ms-transition: all 4s ease-out;
+    -o-transition: all 4s ease-out;
 }
 
 
@@ -1027,6 +1065,9 @@ main {
 /*-----------------------------------*\
     #CONTACT
   \*-----------------------------------*/
+.form {
+    position: relative;
+}
 
 .contact-form {
     margin-bottom: 10px;
@@ -1130,6 +1171,47 @@ textarea.form-input::-webkit-resizer {
     background: var(--bg-gradient-jet);
 }
 
+.overlay-form {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: transparent;
+    backdrop-filter: blur(1.5px);
+    z-index: 5558;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.overlay-form.active {
+    opacity: 1;
+    visibility: initial;
+}
+
+.loader-17 {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 3px solid var(--orange-yellow-crayola);
+    border-right: 3px solid transparent;
+    -webkit-animation: rotation 1s linear infinite;
+    animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 footer {
     font-family: "poppins", sans-serif;
     text-align: center;
@@ -1177,11 +1259,12 @@ footer span a:hover {
     .navbar-link {
         --fs-8: 15px;
     }
+
     .testimonials-modal {
         gap: 25px;
     }
 
-    .modal-content{
+    .modal-content {
         padding-top: 10px;
     }
 
