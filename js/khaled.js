@@ -1,3 +1,12 @@
+document.addEventListener('contextmenu', event => event.preventDefault());
+
+document.addEventListener('keyup', (e) => {
+    if (e.key == 'PrintScreen') {
+        navigator.clipboard.writeText('');
+        alert('Screenshots disabled!');
+    }
+});
+
 // page navigation variables
 var navigationLinks = document.querySelectorAll("[data-nav-link]");
 var pages = document.querySelectorAll("[data-page]");
