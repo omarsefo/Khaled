@@ -3,9 +3,10 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 document.addEventListener('keyup', (e) => {
     if (e.key == 'PrintScreen') {
         navigator.clipboard.writeText('');
-        alert('Screenshots disabled!');
+        alert('Sorry Screenshots disabled!');
     }
 });
+
 
 // page navigation variables
 var navigationLinks = document.querySelectorAll("[data-nav-link]");
