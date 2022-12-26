@@ -7,6 +7,7 @@ function logo() {
     spinner.classList.add("active");
     spinner.style.cursor = "wait";
     setTimeout(() => {
+        document.body.style.overflowY = "scroll";
         spinner.style.cursor = "default";
         spinner.classList.remove("active");
     }, 5000)
