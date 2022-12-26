@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", logo);
+document.addEventListener('load', logo);
+var spinner = document.getElementById("spinner");
+
+function logo() {
+    document.body.style.overflowY = "hidden";
+    spinner.classList.add("active");
+    spinner.style.cursor = "wait";
+    setTimeout(() => {
+        spinner.style.cursor = "default";
+        spinner.classList.remove("active");
+    }, 5000)
+}
+
 document.addEventListener('contextmenu', event => event.preventDefault());
 
 document.addEventListener('keyup', (e) => {
