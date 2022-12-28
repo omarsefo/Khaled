@@ -153,8 +153,8 @@ body {
 .spinner.active {
     visibility: initial;
     opacity: 1;
-    animation: logo 0.5s 6s forwards ease-in-out;
-    -webkit-animation: logo 0.5s 6s forwards ease-in-out;
+    animation: logo 0.5s 5s forwards ease-in-out;
+    -webkit-animation: logo 0.5s 5s forwards ease-in-out;
 }
 
 @keyframes logo {
@@ -174,7 +174,6 @@ body {
     justify-content: center;
     top: 50%;
     left: 50%;
-    z-index: 2;
     transform: translate(-50%, -50%);
     width: 450px;
     height: 350px;
@@ -219,6 +218,28 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     -webkit-animation: animloader56 2s ease infinite;
     animation: animloader56 2s ease infinite;
+}
+
+@keyframes animloader56 {
+    0% {
+        transform: translate(0, 0) rotateX(0) rotateY(0);
+    }
+
+    25% {
+        transform: translate(100%, 0) rotateX(0) rotateY(180deg);
+    }
+
+    50% {
+        transform: translate(100%, 100%) rotateX(-180deg) rotateY(180deg);
+    }
+
+    75% {
+        transform: translate(0, 100%) rotateX(-180deg) rotateY(360deg);
+    }
+
+    100% {
+        transform: translate(0, 0) rotateX(0) rotateY(360deg);
+    }
 }
 
 @keyframes animloader59 {

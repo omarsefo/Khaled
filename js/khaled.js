@@ -9,7 +9,7 @@ function logo() {
     setTimeout(() => {
         spinner.style.cursor = "default";
         spinner.classList.remove("active");
-    }, 5000)
+    }, 3500)
 }
 
 document.addEventListener('contextmenu', event => event.preventDefault());
