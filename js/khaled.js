@@ -3,9 +3,11 @@ document.addEventListener('load', logo);
 var spinner = document.getElementById("spinner");
 
 function logo() {
+    document.body.style.overflowY = "hidden";
     spinner.classList.add("active");
     spinner.style.cursor = "wait";
     setTimeout(() => {
+        document.body.style.overflowY = "scroll";
         spinner.style.cursor = "default";
         spinner.classList.remove("active");
     }, 3500)
