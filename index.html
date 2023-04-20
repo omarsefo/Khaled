@@ -9,7 +9,7 @@
     <meta name="description" content="Welcome To My Portfolio" />
     <meta name="keywords" content="khaled,portfolio" />
     <title>khaled Trumpaji</title>
-    <link rel="icon" href="./image/klogo.png" />
+    <link rel="shortcut icon" href="./image/klogo.png" />
     <link rel="stylesheet" href="./css/khaled.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -530,10 +530,12 @@
                 <section class="blog-posts">
 
                     <ul class="blog-posts-list">
-                        <li class="blog-post-item" data-testimonials-item>
+                        <li class="blog-post-item" data-testimonials-item onclick="openPost(1)">
                             <figure class="blog-banner-box">
                                 <img src="./image/bed.jpg" alt="Best fonts every designer" loading="lazy"
                                     data-testimonials-avatar>
+                                    <img src="./image/khaled2.jpg" alt="Design conferences in 2022" loading="lazy" data-testimonials-avatar>
+                                    <img src="./image/khaled3.jpg" alt="Design conferences in 2022" loading="lazy" data-testimonials-avatar>
                             </figure>
 
                             <div class="blog-content">
@@ -553,7 +555,7 @@
                             </div>
                         </li>
 
-                        <li class="blog-post-item" data-testimonials-item>
+                        <li class="blog-post-item" data-testimonials-item onclick="openPost(2)">
                             <figure class="blog-banner-box">
                                 <img src="./image/khaled2.jpg" alt="Design conferences in 2022" loading="lazy"
                                     data-testimonials-avatar>
@@ -575,7 +577,7 @@
                             </div>
                         </li>
 
-                        <li class="blog-post-item" data-testimonials-item>
+                        <li class="blog-post-item" data-testimonials-item onclick="openPost(3)">
                             <figure class="blog-banner-box">
                                 <img src="./image/khaled3.jpg" alt="Design conferences in 2022" loading="lazy"
                                     data-testimonials-avatar>
@@ -597,7 +599,7 @@
                             </div>
                         </li>
 
-                        <li class="blog-post-item" data-testimonials-item>
+                        <li class="blog-post-item" data-testimonials-item onclick="openPost(4)">
                             <figure class="blog-banner-box">
                                 <img src="./image/1980.jpg" alt="Design conferences in 2022" loading="lazy"
                                     data-testimonials-avatar>
@@ -618,7 +620,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li class="blog-post-item" data-testimonials-item>
+                        <li class="blog-post-item" data-testimonials-item onclick="openPost(5)">
                             <figure class="blog-banner-box">
                                 <img src="./image/stair1.jpg" alt="Design conferences in 2022" loading="lazy"
                                     data-testimonials-avatar>
@@ -639,7 +641,7 @@
                                 </p>
                             </div>
                         </li>
-                        <li class="blog-post-item" data-testimonials-item>
+                        <li class="blog-post-item" data-testimonials-item onclick="openPost(6)">
                             <figure class="blog-banner-box">
                                 <img src="./image/stair2.jpg" alt="Design conferences in 2022" loading="lazy"
                                     data-testimonials-avatar>
@@ -675,27 +677,28 @@
                             <ion-icon name="close-outline"></ion-icon>
                         </button>
 
-                        <div class="modal-img-wrapper">
-                            <figure class="modal-avatar-box">
-                                <img src="./image/bed.jpg" alt="Daniel lewis" width="400" data-modal-img>
+                        <div class="modal-img-wrapper" >
+                            <figure class="modal-avatar-box" id="post-images">
+
                             </figure>
                         </div>
 
                         <div class="modal-content">
 
-                            <h4 class="h3 modal-title" data-modal-title>Design</h4>
+                            <h4 class="h3 modal-title" data-modal-title>Nothing</h4>
 
                             <time datetime="2021-06-14" data-modal-Date></time>
 
                             <div class="model" data-modal-text>
                                 <p>
-                                    m
+                                    Nothing
                                 </p>
                             </div>
                         </div>
                     </section>
                 </div>
             </article>
+
 
 
             <!--
