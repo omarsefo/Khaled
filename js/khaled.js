@@ -116,13 +116,14 @@ postImages.forEach(function (image) {
     modalDate.innerHTML = postdate.innerHTML;
     modalTitle.innerHTML = posttitle.innerHTML;
     modalText.innerHTML = posttext.innerHTML;
-
+    document.body.style.overflowY = "hidden";
     modalContainer.classList.toggle("active");
     overlay.classList.toggle("active");
   };
   
   // modal toggle function
   const testimonialsModalFunc = function () {
+    document.body.style.overflowY = "scroll";
     postImagesContainer.innerHTML = "";
     modalDate.innerHTML = "";
     modalTitle.innerHTML = "";
